@@ -154,7 +154,7 @@ public class GraphingCalculator {
         // it doens't make a difference because it's taking zargle as a variable just like taking x.
 //        calc.show(x -> Math.cos(x));
 //        calc.show(Math::cos);
-//        calc.show((x, n) -> Math.atan(x / Math.sin(n)));
+        calc.show((x, n) -> Math.atan(x / Math.sin(n)));
 
 
         calc.show((x, n) -> {
