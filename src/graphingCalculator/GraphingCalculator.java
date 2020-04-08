@@ -157,14 +157,14 @@ public class GraphingCalculator {
 //        calc.show((x, n) -> Math.atan(x / Math.sin(n)));
 
 
-//        calc.show((x, n) -> {
-//            double result = 0;
-//            for (int i = 1; i < 20; i++) {
-//                result += Math.sin(x * Math.pow(3, i) + n * i)
-//                        / Math.pow(2.5, i);
-//            }
-//            return result;
-//        });
+        calc.show((x, n) -> {
+            double result = 0;
+            for (int i = 1; i < 20; i++) {
+                result += Math.sin(x * Math.pow(3, i) + n * i)
+                        / Math.pow(2.5, i);
+            }
+            return result;
+        });
 
         //It's taking two inputs:x,i and uses result variable as an accumulating variable that adds
         //sin(x*3^i + n*i)/(2.5^i)
